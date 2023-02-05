@@ -1,7 +1,13 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Hmm..", "GrapeTheme")
+local Window = Library.CreateLib("Hood Customs Script", "Serpent")
 
 -- Tab Walkspeed
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+CreditsSection:NewLabel("Owner: g11an15 or Okuneva78591")
+CreditsSection:NewLabel("Scripts Made By: g11an15 or Okuneva78591")
+
+
 local Main = Window:NewTab("Walkspeed")
 local MainSection = Main:NewSection("Walkspeed")
 
@@ -41,9 +47,9 @@ Script:NewButton("FE Chat Bypass-- Q To Disable Or Enable", "FE Admin Commands",
 end)
 
 
+local DHM = Window:NewTab("Hood Customs")
+local DHM = DHM:NewSection("Hood Customs")
 
-local DHM = Window:NewTab("DHM")
-local DHM = DHM:NewSection("DHM")
 
 DHM:NewButton("Oblivion (Silent Aim And More)", "Everything", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua'))()
@@ -56,15 +62,13 @@ end)
 
 
 
+
+
+
+
 local Key = Window:NewTab("Keybinds")
 local Key = Key:NewSection("Keybinds")
 
-Key:NewKeybind("Hide", "Hides The UI", Enum.KeyCode.F, function()
+Key:NewKeybind("Hide", "Hides The UI", Enum.KeyCode.B, function()
 	Library:ToggleUI()
 end)
-
-
-if game.PlaceId == 5602055394 then
-
-
-
