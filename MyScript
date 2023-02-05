@@ -1,0 +1,70 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hmm..", "GrapeTheme")
+
+-- Tab Walkspeed
+local Main = Window:NewTab("Walkspeed")
+local MainSection = Main:NewSection("Walkspeed")
+
+
+MainSection:NewLabel("dm Ella.#2955 If there is any issues")
+
+
+MainSection:NewSlider("Walkspeed", "Applies Walkspeed", 1000, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
+
+
+
+
+-- Tab Walkspeed
+local Second = Window:NewTab("Jump Power")
+local SecondSection = Second:NewSection("Jump Power")
+
+
+SecondSection:NewSlider("Jump Power", "Applies Jump power", 1000, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+local Script = Window:NewTab("Scripts")
+local Script = Script:NewSection("Scripts")
+
+Script:NewButton("Inf Yeild", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+
+Script:NewButton("FE Chat Bypass-- Q To Disable Or Enable", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/FzeDZn1q'))()
+end)
+
+
+
+local DHM = Window:NewTab("DHM")
+local DHM = DHM:NewSection("DHM")
+
+DHM:NewButton("Oblivion (Silent Aim And More)", "Everything", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua'))()
+end)
+
+DHM:NewButton("Animation Changer", "Changes Animations", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarWareOP/Animation-Changer-Source/main/Script", true))()
+end)
+
+
+
+
+local Key = Window:NewTab("Keybinds")
+local Key = Key:NewSection("Keybinds")
+
+Key:NewKeybind("Hide", "Hides The UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+
+if game.PlaceId == 5602055394 then
+
+
+
